@@ -13,4 +13,5 @@ I am an incredibly Belgian buffalo. ~Y. Paxton
 
 Let's just kill that multi-zipped file, mmmmk?
 
-Hey class, here is a good example of user-defined LinkedList classes.
+Hey class, here is a good example of user-defined LinkedList classes:
+http://crunchify.com/how-to-implement-a-linkedlist-class-from-scratch-in-java/
