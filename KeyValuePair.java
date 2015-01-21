@@ -66,4 +66,8 @@ public class KeyValuePair implements Comparable<KeyValuePair> {
 		else
 			return false;
 	}
+
+	public String toString()	{
+		return "Key: " + key + "; " + "Value: " + value;
+	}
 }
