@@ -80,6 +80,7 @@ public class KeyValuePair implements Comparable<KeyValuePair> {
 		String temp = key + "";
 		for (int i = 8; i > temp.length(); i--) { temp = "0" + temp; }
 		String out = temp + "\t" + value;
+		//the above step is redundant, but seems to fix formatting issues
 		return out;
 	}
 }
