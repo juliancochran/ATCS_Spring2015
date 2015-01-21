@@ -71,6 +71,6 @@ public class KeyValuePair implements Comparable<KeyValuePair> {
 	 * @return The string containing the key and the value for the KeyValuePair, in the format “Key: 123456; Value: hello world”
 	 */
 	public String toString()	{
-		return "Key: " + key + "; " + "Value: " + value;
+		return "Key: " + key + "; " + "Value: \"" + value + "\"";
 	}
 }
