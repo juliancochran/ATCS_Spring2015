@@ -10,7 +10,7 @@ public class LinkedList {
 	
 	public LinkedList(Object[] o)	{
 		size = o.length;
-		// my ListNode constructor takes (Object o, ListNode next, ListNode prev)
+		// my ListNode constructor takes (Object o, ListNode prev, ListNode next)
 		head = new ListNode(o[0], head, head);
 		head.setNext(getNextNode(o, head, 1));	
 	}
