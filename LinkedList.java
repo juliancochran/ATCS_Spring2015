@@ -22,6 +22,7 @@ public class LinkedList {
 			temp.setPrev(n);
 			temp.setNext(getNextNode(o, temp, ++i));
 		}
+		else { head.setPrev(n);	}
 		return temp;
 	}
 }
