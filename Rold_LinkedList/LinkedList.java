@@ -203,73 +203,7 @@ public class LinkedList implements Iterable<Object> {
 		}
 		size += 1;
 	}
-
-	/**
-	 * finds an object and makes it the
-	 * first item in the list
-	 * @param o <code>Object</code> to be found
-	 * @return
-	 */
-	public boolean findMTF(Object o) {
-		ListNode temp = head;
-		if (head.getValue().equals(o))
-			return true;
-		temp = head.getNext();
-		while (temp != head) {
-			if (temp.getValue().equals(o)) {
-				head = temp;
-				return true;
-			}
-			temp = temp.getNext();
-		}
-		return false;
-	}
-
-	/**
-	 * finds an Object in the list and swaps it with the current first item, 
-	 * without changing the position of the other items
-	 * @param o <code>Object</code> to be found
-	 * @return
-	 */
-	public boolean findTranspose(Object o) {
-		if (size == 0) {	return false;	}
-		ListNode temp = head;
-		if (head.getValue().equals(o)) {	return false;	}
-		temp = temp.getNext();
-		while (temp != head) {
-			if (temp.getValue().equals(o)) {
-				ListNode afterHead = head.getNext();
-				ListNode beforeHead = head.getPrev();
-				ListNode afterTemp = temp.getNext();
-				ListNode beforeTemp = temp.getPrev();
-				if (afterHead == temp) {
-					temp.setNext(head);
-					head.setPrev(temp);
-				} else {
-					temp.setNext(afterHead);
-					afterHead.setPrev(temp);
-					head.setPrev(beforeTemp);
-					beforeTemp.setNext(head);
-				}
-				if (beforeHead == temp) {
-					temp.setPrev(head);
-					head.setNext(temp);
-
-				} else {
-					temp.setPrev(beforeHead);
-					beforeHead.setNext(temp);
-					head.setNext(afterTemp);
-					afterTemp.setPrev(head);
-				}
-				head = temp;
-				return true;
-			}
-			temp = temp.getNext();
-		}
-		System.err.println("Item not found!");
-		return false;
-	}
-
+	
 	/**
 	 * finds the first index of the <code>Object</code>
 	 * @param o <code>Object</code>
