@@ -17,7 +17,7 @@ public class LinkedList {
 	private ListNode getNextNode(Object[] o, ListNode n, int i)	{
 		// my ListNode class also has a constructor that takes only (Object o)
 		// and sets the others to null
-		ListNode temp = (i < o.length)? new ListNode(o[i]) : head;
+		ListNode temp = (i < o.length)? new ListNode(o[i]) : head;//bonus ternary operator
 		if (temp != head) {
 			temp.setPrev(n);
 			temp.setNext(getNextNode(o, temp, ++i));
