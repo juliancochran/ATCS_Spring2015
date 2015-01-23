@@ -11,7 +11,6 @@ INDEX VERSION 1.127+/Users/jcochran/Documents/ATCS_Spring2015/.metadata/.plugins
 3321539481.index
 1350582005.index
 1270117711.index
-3813963771.index
 3712507179.index
 1258772382.index
 2545238116.index
