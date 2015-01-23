@@ -10,15 +10,13 @@ public class LinkedList {
 	
 	public LinkedList(Object[] o)	{
 		size = o.length;
-		head = new ListNode(o[0]);
-		head.setNext(getNextNode(o, head, 1));
+		head = new ListNode(o[0], head, head);
+		head.setNext(getNextNode(o, head, 1));	
 	}
-	
 	private ListNode getNextNode(Object[] o, ListNode n, int i)	{
-		ListNode temp = (i < o.length)? new ListNode(o[i]) : null;
-		if (temp != null) {
-			temp.setPrev(n);  //this could be done in the initialization of temp,
-			                  //but I can't predict everyone's constructor methods
+		ListNode temp = (i < o.length)? new ListNode(o[i]) : head;
+		if (temp != head) {
+			temp.setPrev(n);
 			temp.setNext(getNextNode(o, temp, ++i));
 		}
 		return temp;
