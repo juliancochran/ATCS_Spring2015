@@ -1,6 +1,6 @@
 /**
 * The most confusing way to construct the LinkedList: Recursion!
-* Batteries, Getters and Setters not included.
+* Batteries, Getters and Setters not included (Some Assembly Required).
 * @author OldRoldGoldenfold
 * @version 1/22/2015
 **/
