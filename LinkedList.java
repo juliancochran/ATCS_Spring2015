@@ -10,10 +10,13 @@ public class LinkedList {
 	
 	public LinkedList(Object[] o)	{
 		size = o.length;
+		// my ListNode constructor takes (Object o, ListNode next, ListNode prev)
 		head = new ListNode(o[0], head, head);
 		head.setNext(getNextNode(o, head, 1));	
 	}
 	private ListNode getNextNode(Object[] o, ListNode n, int i)	{
+		// my ListNode class also has a constructor that takes only (Object o)
+		// and sets the others to null
 		ListNode temp = (i < o.length)? new ListNode(o[i]) : head;
 		if (temp != head) {
 			temp.setPrev(n);
