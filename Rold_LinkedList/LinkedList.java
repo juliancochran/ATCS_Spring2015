@@ -10,12 +10,12 @@ public class LinkedList implements Iterable<Object> {
 	private ListNode head;
 	private int size = 0;
 	
-	public LinkedList()					{													}
-	public LinkedList(KeyValuePair key) {	add(key);										}
-	public LinkedList(KeyValuePair[] k)	{	for(KeyValuePair key : k)	add(key);			}
-	public int getSize()				{	return size;									}
+	public LinkedList()			{							}
+	public LinkedList(KeyValuePair key	{	add(key);					}
+	public LinkedList(KeyValuePair[] k)	{	for(KeyValuePair key : k)	add(key);	}
+	public int getSize()			{	return size;					}
 	public KeyValuePair getHead()		{	return (head == null)? null : head.getValue();	}
-	public Iterator<Object> iterator() 	{	return new ListNodeIterator(head);				}
+	public Iterator<Object> iterator() 	{	return new ListNodeIterator(head);		}
 	
 	
 	public void add(KeyValuePair k){
