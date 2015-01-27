@@ -11,7 +11,7 @@ public class LinkedList implements Iterable<Object> {
 	private int size = 0;
 	
 	public LinkedList()			{							}
-	public LinkedList(KeyValuePair key	{	add(key);					}
+	public LinkedList(KeyValuePair key)	{	add(key);					}
 	public LinkedList(KeyValuePair[] k)	{	for(KeyValuePair key : k)	add(key);	}
 	public int getSize()			{	return size;					}
 	public KeyValuePair getHead()		{	return (head == null)? null : head.getValue();	}
