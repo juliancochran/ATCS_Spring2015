@@ -5,6 +5,7 @@ Repository for the Advanced Topics in Computer Science Seminar at Durham Academy
 For All Project files in Package Format, see https://github.com/OldRoldGoldenfold/ATCS
 
 OUTPUT FROM MTFDICTIONARY AND TRANSPOSEDICTIONARY:
+(For Comparison, My computer performed a selection sort of all 200k KeyValuePairs in 10,020,175,948 comparisons and 484 seconds)
 
 Search Keys loaded...
 
